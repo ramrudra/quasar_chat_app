@@ -29,14 +29,14 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+// import EssentialLink from 'components/EssentialLink.vue'
 
 
 
 export default {
 computed:{
-tital(){
-let currentPath = this.$rout.fullPath
+title(){
+let currentPath = this.$route.fullPath
 if(currentPath == '/') return 'chatApp'
 else if(currentPath == '/chat') return 'chat'
 else if(currentPath == '/auth') return 'login'
@@ -44,7 +44,7 @@ else if(currentPath == '/auth') return 'login'
 }
 },
 methods:{
-EssentialLink
+// EssentialLink
 }
 }
 </script>
