@@ -15,11 +15,24 @@
     </div>
     <q-footer elevated>
         <q-toolbar >
-          <q-form class="full-width" @submit="sendMessage">
-            <q-input  bg-color="white" rounded
-              outlined  v-model="newMessage" label="Message" dense>
+          <q-form
+          class="full-width"
+          @submit="sendMessage">
+            <q-input
+             bg-color="white"
+             rounded
+              outlined
+               v-model="newMessage"
+               label="Message"
+               dense>
             <template v-slot:after>
-            <q-btn round dense flat type="submit" color="white" icon="send" />
+            <q-btn
+            round
+            dense
+            flat
+            type="submit"
+             color="white"
+             icon="send" />
             </template>
             </q-input>
           </q-form>
