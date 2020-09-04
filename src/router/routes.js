@@ -8,7 +8,7 @@ const routes = [{
                     import ('pages/PageUsers.vue')
             },
             {
-                path: '/chat',
+                path: '/chat/:otherUserId',
                 component: () =>
                     import ('pages/PageChat.vue')
             },
